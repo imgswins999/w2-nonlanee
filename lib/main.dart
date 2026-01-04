@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => MyHomePage(),
         '/rectagle': (context) => Rectangle(),
-        '/pressure' : (context) => Pressure(),
+        '/pressure': (context) => Pressure(),
       },
     );
   }
@@ -33,6 +33,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 46, 46, 46),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -42,20 +43,24 @@ class MyHomePage extends StatelessWidget {
                 onPressed: () => Navigator.pushNamed(context, '/rectagle'),
                 child: Text('คำนวณพื้นที่สี่เหลี่ยม'),
                 style: TextButton.styleFrom(
-                  backgroundColor: Colors.blue[300],
+                  backgroundColor: const Color.fromARGB(255, 255, 196, 58),
                   foregroundColor: Colors.white,
+                  minimumSize: Size(300, 50),
                 ),
               ),
-
             ),
-            Center(child: TextButton(
-              onPressed: () => Navigator.pushNamed(context, '/pressure'),
-              child: Text('คำนวณความดัน'),
-              style: TextButton.styleFrom(
-                backgroundColor: Colors.blue[300],
-                foregroundColor: Colors.white,
+            SizedBox(height: 20),
+            Center(
+              child: TextButton(
+                onPressed: () => Navigator.pushNamed(context, '/pressure'),
+                child: Text('คำนวณความดัน'),
+                style: TextButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 246, 100, 144),
+                  foregroundColor: Colors.white,
+                  minimumSize: Size(300, 50),
+                ),
               ),
-            ),)
+            ),
           ],
         ),
       ),
