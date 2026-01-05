@@ -24,15 +24,15 @@ class RectangleState extends State<Rectangle> {
 
   final InputDecoration _textFieldStyle = InputDecoration(
     filled: true,
-    fillColor: const Color.fromARGB(255, 0, 0, 0),
+    fillColor: const Color(0xFF606060),
     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
 
-    labelStyle: TextStyle(color: Colors.orange, fontSize: 16),
+    labelStyle: TextStyle(color: Colors.orange, fontSize: 20),
 
     floatingLabelStyle: TextStyle(
       color: Colors.orange,
       fontWeight: FontWeight.bold,
-      fontSize: 18,
+      fontSize: 20,
     ),
   );
 
@@ -86,8 +86,8 @@ class RectangleState extends State<Rectangle> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.orange,
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 100,
-                  vertical: 20,
+                  horizontal: 150,
+                  vertical: 10,
                 ),
               ),
               child: Text('คำนวณ', style: TextStyle(color: Colors.white,fontSize: 20)),

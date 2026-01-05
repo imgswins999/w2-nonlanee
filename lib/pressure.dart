@@ -24,18 +24,18 @@ class PressureState extends State<Pressure> {
 
   final InputDecoration _textFieldStyle = InputDecoration(
     filled: true,
-    fillColor: const Color.fromARGB(255, 0, 0, 0),
+    fillColor: const Color(0xFF606060),
     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
 
     labelStyle: TextStyle(
       color: const Color.fromARGB(255, 246, 100, 144),
-      fontSize: 16,
+      fontSize: 20,
     ),
 
     floatingLabelStyle: TextStyle(
       color: const Color.fromARGB(255, 246, 100, 144),
       fontWeight: FontWeight.bold,
-      fontSize: 18,
+      fontSize: 20,
     ),
   );
 
@@ -107,8 +107,8 @@ class PressureState extends State<Pressure> {
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color.fromARGB(255, 248, 148, 148),
               padding: const EdgeInsets.symmetric(
-                horizontal: 100,
-                vertical: 20,
+                horizontal: 150,
+                vertical: 10,
               ),
             ),
             child: Text('คำนวณ', style: TextStyle(color: Colors.white,fontSize: 20)),
