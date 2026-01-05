@@ -48,9 +48,23 @@ class PressureState extends State<Pressure> {
         children: [
           SizedBox(height: 20),
           Text(
-            "แรง $_F N. พื้นที่ $_A m² ความดัน $_P P.",
+            "แรง $_F N.",
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 20,
+              color: const Color.fromARGB(255, 246, 100, 144),
+            ),
+          ),
+          Text(
+            "พื้นที่ $_A m²",
+            style: TextStyle(
+              fontSize: 20,
+              color: const Color.fromARGB(255, 246, 100, 144),
+            ),
+          ),
+          Text(
+            " ความดัน $_P P.",
+            style: TextStyle(
+              fontSize: 20,
               color: const Color.fromARGB(255, 246, 100, 144),
             ),
           ),
@@ -97,7 +111,7 @@ class PressureState extends State<Pressure> {
                 vertical: 20,
               ),
             ),
-            child: Text('คำนวณ', style: TextStyle(color: Colors.white)),
+            child: Text('คำนวณ', style: TextStyle(color: Colors.white,fontSize: 20)),
           ),
         ],
       ),

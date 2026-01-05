@@ -38,10 +38,11 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Center(child: Image.network('https://cdn-icons-png.flaticon.com/512/2344/2344132.png',width: 250,)),
             Center(
               child: TextButton(
                 onPressed: () => Navigator.pushNamed(context, '/rectagle'),
-                child: Text('คำนวณพื้นที่สี่เหลี่ยม'),
+                child: Text('คำนวณพื้นที่สี่เหลี่ยม',style: TextStyle(fontSize: 20),),
                 style: TextButton.styleFrom(
                   backgroundColor: const Color.fromARGB(255, 255, 196, 58),
                   foregroundColor: Colors.white,
@@ -53,8 +54,9 @@ class MyHomePage extends StatelessWidget {
             Center(
               child: TextButton(
                 onPressed: () => Navigator.pushNamed(context, '/pressure'),
-                child: Text('คำนวณความดัน'),
+                child: Text('คำนวณความดัน',style: TextStyle(fontSize: 20),),
                 style: TextButton.styleFrom(
+
                   backgroundColor: const Color.fromARGB(255, 246, 100, 144),
                   foregroundColor: Colors.white,
                   minimumSize: Size(300, 50),

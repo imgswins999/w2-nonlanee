@@ -47,7 +47,7 @@ class RectangleState extends State<Rectangle> {
             SizedBox(height: 10),
             Text(
               "กว้าง $_width ม. ยาว $_length ม. พื้นที่คือ $_area ตร.ม.",
-              style: TextStyle(fontSize: 18, color: Colors.orange),
+              style: TextStyle(fontSize: 20, color: Colors.orange),
             ),
             SizedBox(height: 10),
             Container(
@@ -90,7 +90,7 @@ class RectangleState extends State<Rectangle> {
                   vertical: 20,
                 ),
               ),
-              child: Text('คำนวณ', style: TextStyle(color: Colors.white)),
+              child: Text('คำนวณ', style: TextStyle(color: Colors.white,fontSize: 20)),
             ),
           ],
         ),
